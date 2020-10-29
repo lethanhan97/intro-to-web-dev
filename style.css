@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+code {
+  background-color: rgb(24, 24, 24);
+  color: white;
+}
+
+.important {
+  color: red;
+  font-weight: bold;
+}
+
+.box-wrapper {
+  background-color: blue;
+  width: fit-content;
+  padding: 10px;
+}
+
+.box {
+  background-color: white;
+  height: 100px;
+  width: 100px;
+
+  padding: 10px;
+  border: dashed 2px red;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item-1 {
+  height: 100px;
+  width: 300px;
+  background-color: red;
+}
+
+.flex-item-2 {
+  height: 300px;
+  width: 200px;
+  background-color: blue;
+}
+
+.flex-item-3 {
+  height: 250px;
+  width: 100px;
+  background-color: green;
+}
