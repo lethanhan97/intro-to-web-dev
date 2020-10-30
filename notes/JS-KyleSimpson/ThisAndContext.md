@@ -33,3 +33,23 @@ otherClass();
 ```
 
 The ask function is now much more flexible
+
+## Prototype
+
+```
+function Workshop(teacher) {
+    this.teacher = teacher;
+}
+
+Workshop.prototype.greet = function ask() {
+    console.log("Hello ", this.teacher)
+}
+
+const danceWorkshop = new Workshop("An")
+const codingWorkshop = new Workshop("Kyle")
+
+danceWorkshop.greet() // Hello An
+codingWorkshop.greet() // Hello Kyle
+```
+
+The prototype allows for the function to be tied into the class. When we declare a new variable of a particular class, it will have access to the function declared in prototype
