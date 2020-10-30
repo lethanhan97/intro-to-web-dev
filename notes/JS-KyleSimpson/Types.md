@@ -61,3 +61,27 @@ Number(stuff) // converts anything into a number
 String(stuff) // converts anything into a string
 Boolean(stuff) // converts into their truthy falsy type
 ```
+
+## Truthy vs Falsy
+
+Falsy
+
+- 0, -0
+- null
+- undefined
+- NaN
+- false
+
+The rest are thus truthy
+
+> `!!stuff` is a good way to explicitly define something to be used as a Boolean (same as Boolean())
+
+> `+stuff` is a good way to convert sth into a Number (same as Number())
+
+> `Number()` is more accurate than `parseFloat()`
+
+## Best Practice
+
+Be obvious about types. If we are dealing with number, then really turn it into a number etc
+
+Avoid confusion
