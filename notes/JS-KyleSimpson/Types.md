@@ -14,3 +14,15 @@ In JavaScript, everything is an object --> **FALSE**
 > null, array, functions are subsets of objects
 
 In JS, variables don't have types. Values do!
+
+## `NaN`
+
+```
+const greetings = "Hello World!"
+const sth = grettings/2
+
+Number.isNaN(greetings) // false
+Number.isNaN(sth) // true
+```
+
+`NaN` is a special value that indicates that an invalid numercal operation had taken place
