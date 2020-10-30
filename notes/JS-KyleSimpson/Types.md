@@ -80,8 +80,20 @@ The rest are thus truthy
 
 > `Number()` is more accurate than `parseFloat()`
 
-## Best Practice
+### Best Practice
 
 Be obvious about types. If we are dealing with number, then really turn it into a number etc
 
 Avoid confusion
+
+## Equality
+
+`===` disallows coercion
+
+`==` allows coercion
+
+basically the big misconception is that == checks for value and === checks for types AND value
+
+that s only half truth. What happens is that === disallow for coercion (changing from 1 type to another) and == allows coercion (changing from 1 type to another) instead of ambiguously checks for a "value"
+
+So you should/could use == in places where types are very clear (for e.g in typescript where in your function you alr define the correct type for the method parameters) or when checking for stuff that are "falsy" (like null, undefined or NaN) etc
