@@ -79,3 +79,33 @@ while(condition) {
     doSth()
 }
 ```
+
+## Function
+
+Named Functions
+
+```
+function whoAmI(name) {
+    console.log(`My name is ${name}`)
+}
+```
+
+```
+const whoAmI = () => {
+    console.log(`My name is ${name}`)
+}
+```
+
+Anonymous Functions
+
+```
+function() {
+    doSth()
+}
+```
+
+```
+() => {
+    doSth()
+}
+```
