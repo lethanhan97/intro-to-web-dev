@@ -1,4 +1,4 @@
-# Types / Coercian
+# Types & Coercion
 
 In JavaScript, everything is an object --> **FALSE**
 
