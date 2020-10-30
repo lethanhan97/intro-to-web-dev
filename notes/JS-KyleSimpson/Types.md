@@ -43,3 +43,21 @@ Don't use `new` for these. It will coerce the type into that type:
 - String()
 - Number()
 - Boolean()
+
+## Coercion
+
+Converting a type to another type
+
+```
+const msg1 = "There are "
+const numStudents = 16
+const msg2 = " students here"
+
+console.log(msg1 + numStudents + msg2) // Implicit coercion
+```
+
+```
+Number(stuff) // converts anything into a number
+String(stuff) // converts anything into a string
+Boolean(stuff) // converts into their truthy falsy type
+```
