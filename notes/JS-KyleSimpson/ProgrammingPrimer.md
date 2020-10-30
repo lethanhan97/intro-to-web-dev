@@ -55,3 +55,27 @@ The whole thing is a statement. `age = 39` is an assignment statement.
 ### `age = 1 + (age * 2)`
 
 The whole thing is a statement. `age * 2` is a statement. `1 + result` is a statement. `age = result` is a statement
+
+## Loops
+
+### For loop
+
+```
+for(let i = 0; i < num; i++) {
+    doSth()
+}
+```
+
+```
+for (let item of array) {
+    doSth()
+}
+```
+
+### While loop
+
+```
+while(condition) {
+    doSth()
+}
+```
