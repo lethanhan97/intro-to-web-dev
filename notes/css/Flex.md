@@ -8,6 +8,7 @@
 - Major disadvantages:
   - Wasnt designed to be locked down for layouts. only for 1 dimension
   - Browser support and syntax is challenging
+- `space-evenly` is not well supported
 
 ## Terminology
 
