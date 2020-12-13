@@ -1,4 +1,4 @@
-# Fundamental To Functional Workshop Notes
+# Objects
 
 ## Property Access
 
