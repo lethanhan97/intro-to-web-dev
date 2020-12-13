@@ -55,3 +55,48 @@ a[0] = "Mrs. White"
 The 0 basically coerce into a string. However we can't use a.0 because 0 is not a string.
 
 ![When to use bracket vs dot](../../assets/bracketVsDots.png)
+
+## ES6 Destructuring
+
+### Declarations and assignment
+
+You can also declare and assign variables like this
+
+```
+// Declare
+
+const [first, second] = [true, false]
+console.log(first) // true;
+console.log(second) // false
+
+// Assign
+
+[first, second] = [1, 2]
+console.log(first) // 1;
+console.log(second) // 2
+```
+
+Or like this
+
+```
+const {first, second} = {first: true, second: false}
+console.log(first) // true;
+console.log(second) // false
+
+// Assign
+
+{first, second} = {first: 1, second: 2}
+console.log(first) // 1;
+console.log(second) // 2
+```
+
+### Swap values
+
+We can also swap variable values easily with ES6 Destructuring
+
+```
+let a = 1
+let b = 2
+
+[a,b] = [b,a] // now a is 2 and b is 1
+```
