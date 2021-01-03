@@ -44,4 +44,7 @@ function sayHi(hi = "hello") {
   console.log(hi);
 }
 
-sayHi("sup");
+const _ = {};
+_.from = function (pseudoArr) {
+  return Array.prototype.slice.call(pseudoArr);
+};
