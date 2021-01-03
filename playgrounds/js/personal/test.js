@@ -40,4 +40,4 @@ const testSpread = (...args) => {
   console.log(args);
 };
 
-console.log(testSpread("hi", "world"));
+testSpread("hi", "world");
