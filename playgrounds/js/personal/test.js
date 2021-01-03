@@ -1,9 +1,40 @@
-function callMe() {
-  console.log(arguments);
-}
+const data = [
+  {
+    name: "Tom",
+    isKiller: false,
+  },
+  {
+    name: "Dick",
+    isKiller: false,
+  },
+  {
+    name: "Harry",
+    isKiller: false,
+  },
+  {
+    name: "Johnny",
+    isKiller: true,
+  },
+];
 
-const callMe2 = () => {
-  console.log(arguments);
+const getInnocentPeople = function (suspects) {
+  const result = suspects
+    .filter((suspect) => !suspect.isKiller)
+    .map((suspect) => suspect.name);
+
+  return result;
 };
 
-callMe2("hi", "hello", "world");
+const getKiller = function (suspects) {
+  const killer = suspects
+    .filter((suspect) => suspect.isKiller)
+    .map((suspect) => suspect.name);
+
+  return killer;
+};
+
+const innocent = getInnocentPeople(data);
+const killer = getKiller(data);
+
+console.log(innocent);
+console.log(killer);
