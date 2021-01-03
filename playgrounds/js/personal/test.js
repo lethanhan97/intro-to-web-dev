@@ -36,5 +36,8 @@ const getKiller = function (suspects) {
 const innocent = getInnocentPeople(data);
 const killer = getKiller(data);
 
-console.log(innocent);
-console.log(killer);
+const testSpread = (...args) => {
+  console.log(args);
+};
+
+console.log(testSpread("hi", "world"));
