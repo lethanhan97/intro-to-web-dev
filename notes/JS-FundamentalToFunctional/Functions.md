@@ -25,3 +25,4 @@ nameImprover("An")
 - Arrow functions doesn't own its own `this` value.
 - It grabs its value from its parent's scope
 - Arrow function doesn't have the keyword `arguments` which is an array of the arguments being passed in the function. Arrow function's `arguments` keyword is a lil weird ngl
+- Functions are also objects
