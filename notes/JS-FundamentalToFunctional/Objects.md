@@ -100,3 +100,7 @@ let b = 2
 
 [a,b] = [b,a] // now a is 2 and b is 1
 ```
+
+### Misc
+
+Pseudo arrays are objects that are arrays but without array prototype methods
