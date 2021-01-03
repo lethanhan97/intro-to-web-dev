@@ -1,1 +1,3 @@
 # Scope
+
+## Global scope
