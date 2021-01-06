@@ -1,6 +1,18 @@
-// test scope
-for (var i = 0; i < 10; i++) {
-  console.log("sup");
+function cacher() {
+  let cache;
+
+  return function () {
+    if (!!cache) {
+      console.log(cache);
+      cache = cache + 1;
+    } else {
+      console.log("no cache...");
+      cache = 10;
+    }
+  };
 }
 
-console.log(`Im outside of the for block but i know that i is ${i}`);
+const test = cacher();
+test();
+test();
+test();

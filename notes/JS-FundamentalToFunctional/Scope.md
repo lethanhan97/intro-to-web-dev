@@ -62,3 +62,26 @@ function fn() {
 fn() // prints 11
 fn() // prints 11. Thus, the variable counter is cleaned up when function had finished executing
 ```
+
+Stuff referenced in outer scope will retain when it is modified in inner scope
+
+```
+function cacher() {
+  let cache;
+
+  return function () {
+    if (!!cache) {
+      console.log(cache);
+      cache = cache + 1;
+    } else {
+      console.log("no cache...");
+      cache = 10;
+    }
+  };
+}
+
+const test = cacher();
+test(); // no cache...
+test(); // 10
+test(); // 11
+```
