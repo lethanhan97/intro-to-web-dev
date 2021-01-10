@@ -14,10 +14,10 @@ For a code snippet like this
 const handler = (e) => console.log(e);
 
 // Listens to event
-document.addEventListener("mousemove", handler);
+element.addEventListener("mousemove", handler);
 
 // Remove listener
-document.removeEventListener("mousemove");
+element.removeEventListener("mousemove", handler);
 ```
 
 In Observable it is this
@@ -47,3 +47,17 @@ mousemove.forEach(
     () => console.log("done)
 )
 ```
+
+## Working with Observables
+
+An Observables is a Collection of Observable (think array of array)
+
+We can use methods like `concatAll()` to flatten the Observable. `concatAll()` keeps the order of the data coming out of the Observable, thus we shouldn't use it for infinite streams
+
+## `takeUntil()`
+
+```
+{...1..2..3}.takeUntil({...4})
+```
+
+Source Observable can use this method, which takes in a stop Observable. As soon as the stop Observable fires, `onNext` or `onError` or `onComplete`, it will stop taking from source Observable
