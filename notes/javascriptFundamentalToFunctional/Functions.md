@@ -26,3 +26,16 @@ nameImprover("An")
 - It grabs its value from its parent's scope
 - Arrow function doesn't have the keyword `arguments` which is an array of the arguments being passed in the function. Arrow function's `arguments` keyword is a lil weird ngl
 - Functions are also objects
+
+## Misc
+
+In order to pass in as many arguments you want, in ES6, you can do this
+
+```
+const fn = (...args) => {
+    console.log(args)
+}
+
+fn('Hi') // prints ['Hi']
+fn('Hello', 'World') // prints ['Hello', 'World']
+```
