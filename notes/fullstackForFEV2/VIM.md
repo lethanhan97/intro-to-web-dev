@@ -17,3 +17,6 @@ VIM modes:
 3. bang (!): if you have typed sth and it will ask if u want to quit without saving. ! basically says yes
 
 [VIM CS](https://linuxmoz.com/vi-commands-cheat-sheet/)
+
+:set number : shows line number
+: set nonumber: hides line number
