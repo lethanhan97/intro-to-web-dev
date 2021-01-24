@@ -31,3 +31,19 @@ lethanhan.com: domain
 .com: TLD (Top Level Domain). Run by companies
 
 Every country has their own top level domain (e.g .sg .cn. ru)
+
+8. Nameservers: Helps map domains to IP Addresses
+
+9. `traceroutes`: Ping but it prints out every step it takes along the way. At every node. It helps diagnose network problems.
+   Both `ping` and `traceroutes` run on ICMP (Internet Control Message Protocol) in which some websites can decide to not respond to it at all (Black Holing)
+
+## Packet
+
+Packet: A bit of information. Like an envelope, it has:
+
+1. an address
+2. where is it going
+
+Packet mainly contains metadata. All of the information are divided into many tiny packets and gets put together by a checksum
+
+TCP is error correcting
