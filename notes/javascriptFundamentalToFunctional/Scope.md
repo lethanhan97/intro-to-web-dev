@@ -81,7 +81,17 @@ function cacher() {
 }
 
 const test = cacher();
+const test2 = cacher();
+
 test(); // no cache...
 test(); // 10
 test(); // 11
+
+test2(); // no cache...
+test2(); // 10
+test2(); // 11
 ```
+
+The function above have access to its parents' variable `cache`. Even though function `cacher` had finished calling, the variable `cache` is still kept alive. This is closure
+
+When `cacher()` is called again to create `test2`, the function creates a 2nd execution context that is different from the 1st execution context from creating `test`. Thus, they won't overlap
