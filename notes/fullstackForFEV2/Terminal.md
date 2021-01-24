@@ -10,3 +10,8 @@
 8. less: show file content by page (better than cat)
 9. rm: remove file
 10. echo: repeat input/print
+
+Shell: Command interpreter to interface with system
+Terminal: Run shell applications
+
+Shell talks to application/OS which talks to a kernel
