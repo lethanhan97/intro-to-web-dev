@@ -15,3 +15,8 @@ Shell: Command interpreter to interface with system
 Terminal: Run shell applications
 
 Shell talks to application/OS which talks to a kernel
+
+## Location Shortcuts
+
+`~`: Shortcut for Home
+`/`: Root
