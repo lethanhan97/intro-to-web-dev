@@ -4,7 +4,7 @@ Serves content. Response to requests
 
 Any computer can be a server. As long as it response to requests and serving content, it is a server
 
-Any port below 1000 is reserved
+Any port below 1024 is reserved
 
 Servers that we pay for are built differently from our consumer machines. They are custom built machines for serving files. They live in data centers. Run in really cold environment. Usually v clean. Very tight security
 
@@ -46,3 +46,5 @@ Made of 2 parts: Public key and Private key.
 Everything is encrypted with the public key. Encrypts using private key
 
 To generate a pair of public-private key use `ssh-keygen`
+
+To go in your server, use `ssh root@ip`. If you have more than 1 private key, you need to use `ssh -i yourKeyName root@ip`. If you want to see what is happening use `ssh root@ip -v`.

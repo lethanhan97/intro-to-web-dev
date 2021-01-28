@@ -47,3 +47,9 @@ Packet: A bit of information. Like an envelope, it has:
 Packet mainly contains metadata. All of the information are divided into many tiny packets and gets put together by a checksum
 
 TCP is error correcting
+
+## DNS Records
+
+There are different types of DNS Records. A common one is called "A record" which maps name to ip address. CNAME maps name to name
+
+`dig domain` shows what name is mapped to what address
