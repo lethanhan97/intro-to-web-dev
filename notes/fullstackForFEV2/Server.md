@@ -48,3 +48,33 @@ Everything is encrypted with the public key. Encrypts using private key
 To generate a pair of public-private key use `ssh-keygen`
 
 To go in your server, use `ssh root@ip`. If you have more than 1 private key, you need to use `ssh -i yourKeyName root@ip`. If you want to see what is happening use `ssh root@ip -v`.
+
+## Setting up
+
+1. Update software -> security
+2. Create a non root user
+3. Make that user a superuser
+4. Enable login for new user
+5. Disable root login
+
+```
+apt update // get the list of the most updated version but DOES NOT install
+
+apt upgrade // install from the list of most updated version
+
+adduser $username // adds user in server
+
+usermod -aG sudo $username // add user into superuser group. Otherwise user cant use sudo, and is limited to home page
+
+su $usernam // switch user
+
+sudo cat /var/log/auth.log // check auth log
+
+tail -f $logfile // watch the last 5 log in the log file and keep that command open to keep check for updates
+
+cd ~ // change to home directory
+
+mkdir -p name // make a directory if it doesnt already exist
+
+ls -a // show all directories including hidden
+```
