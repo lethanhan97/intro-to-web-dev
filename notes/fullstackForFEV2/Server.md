@@ -77,4 +77,12 @@ cd ~ // change to home directory
 mkdir -p name // make a directory if it doesnt already exist
 
 ls -a // show all directories including hidden
+
+chmod options permissions filename // change permission of a file
 ```
+
+[Octal permission list](https://www.computerhope.com/unix/uchmod.htm)
+
+Permission also comes in [owner][group][others]
+
+To disable root login `sudo vi /etc/ssh/sshd_config`
