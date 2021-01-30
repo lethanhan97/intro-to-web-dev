@@ -19,3 +19,9 @@ sudo apt install nginx // install nginx
 
 sudo service nginx start // start nginx
 ```
+
+## Configuration
+
+- Default config is at `/etc/nginx/sites-available/default`
+- Root directory for requests is at `/var/www/html`
+- Nginx directives: Macro for doing stuff

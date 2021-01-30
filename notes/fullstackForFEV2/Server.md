@@ -79,6 +79,8 @@ mkdir -p name // make a directory if it doesnt already exist
 ls -a // show all directories including hidden
 
 chmod options permissions filename // change permission of a file
+
+chown -R $USER:$USER folder // make a particular folder belong to a particular user so you dont have to sudo everytime
 ```
 
 [Octal permission list](https://www.computerhope.com/unix/uchmod.htm)
