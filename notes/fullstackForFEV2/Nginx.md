@@ -25,3 +25,9 @@ sudo service nginx start // start nginx
 - Default config is at `/etc/nginx/sites-available/default`
 - Root directory for requests is at `/var/www/html`
 - Nginx directives: Macro for doing stuff
+
+## Commands
+
+- To start Nginx: `sudo service nginx start`
+- Restart: `sudo service nginx reload`
+- Stop: `sudo service nginx stop`
