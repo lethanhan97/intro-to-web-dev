@@ -97,3 +97,4 @@ basically the big misconception is that == checks for value and === checks for t
 that s only half truth. What happens is that === disallow for coercion (changing from 1 type to another) and == allows coercion (changing from 1 type to another) instead of ambiguously checks for a "value"
 
 So you should/could use == in places where types are very clear (for e.g in typescript where in your function you alr define the correct type for the method parameters) or when checking for stuff that are "falsy" (like null, undefined or NaN) etc
+

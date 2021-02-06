@@ -11,8 +11,3 @@ function cacher() {
     }
   };
 }
-
-const test = cacher();
-test();
-test();
-test();
