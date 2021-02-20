@@ -49,3 +49,15 @@ Trivia:
 > To a user they seem to work the same way, but they aren’t the same as far as search engines are concerned. Search engines sense the different types of redirects, and handle them differently. A 301 redirect means that the page has permanently moved to a new location. A 302 redirect means that the move is only temporary. Search engines need to figure out whether to keep the old page, or replace it with the one found at the new location. If the wrong type of redirect has been set up, search engines may become confused, resulting in a loss of traffic.
 
 More info [here](https://www.hochmanconsultants.com/301-vs-302-redirect/#:~:text=A%20301%20redirect%20means%20that,found%20at%20the%20new%20location.)
+
+## Websocket
+
+For nginx to work with websocket, the connection must be an upgraded connection. In location block, we need to set this
+
+```
+location / {
+	proxy_set_header Upgrade $http_upgrade;
+	proxy_set_header Connection "upgrade";
+	proxy_pass http://localhost:3000;
+}
+```
