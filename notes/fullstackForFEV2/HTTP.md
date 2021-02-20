@@ -54,3 +54,24 @@ HTTPS cant be done for just IP Address. Only domain name
 
 Use [Certbot](https://certbot.eff.org/instructions)
 
+## HTTP/2 
+
+In HTTP1.1, with TCP, every connection needed to perform a handshake. 1 connection = 1 pipe
+
+In HTTP/2, we do many requests over 1 connection (multiplexing)
+
+There is a limit on number of connections we can make (most browser limited to 6 per domain)
+
+For a very large number of requests (quadrillion), getting rid of multiple handshakes make everything harder
+
+HTTP/2 also has HPACK (a compression algo). It hashes the header and compare the hashes, giving about 30-40% speed increase. Though it wont do it on cookies cuz cookies are more dynamic
+
+
+
+## HTTP/3
+
+Not being supported yet
+
+HTTP over UDP instead of HTTP over TCP like in HTTP/2 and HTTP/1.1
+
+It has some error correction in it
