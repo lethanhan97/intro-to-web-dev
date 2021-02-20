@@ -47,3 +47,25 @@ Services:
 - Amazon EKS
 - Apache Mesos
 - AKS
+
+## Load balancer
+
+Manage requests and resources. Direct requests to available containers
+
+Operate using Scheduling Algorithms. Some examples:
+
+- Round Robin
+- IP Hashing
+- Least Load
+- Least connection
+
+you can use `top` or `htop` to see the load on your server. CPU load, Memory Load and Swp Load
+
+## Deployment
+
+There are tools that help you spin up/take down multiple servers at once. E.g:
+
+- Ansible
+- Vagrant
+- Puppet
+
